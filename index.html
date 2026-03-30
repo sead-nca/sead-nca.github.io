@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEAD NCA Lab</title>
+  <link rel="stylesheet" href="shared/sead.css">
+</head>
+<body>
+  <script src="shared/header.js"></script>
+
+  <div class="sead-title">
+    <h1>SEAD NCA</h1>
+    <p>Spatiotemporal Evolution with Attractor Dynamics</p>
+    <p class="about">Following von Neumann's vision of cellular automata — exploring computation as a physical process.</p>
+  </div>
+
+  <div class="sead-article">
+    <div class="paper-list">
+
+      <div class="paper-card">
+        <div class="paper-meta">2025</div>
+        <h3><a href="proto-cky/">Proto-CKY: Emergent Parsing from 1-Bit Supervision</a></h3>
+        <p>A 2D neural cellular automaton spontaneously develops CKY-like parsing
+           from only valid/invalid labels. ~18K parameters, trains in minutes.</p>
+        <div class="paper-links">
+          <a href="proto-cky/">Interactive</a>
+          <a href="#">PDF</a>
+          <a href="https://github.com/sead-nca">Code</a>
+        </div>
+      </div>
+
+      <div class="paper-card">
+        <div class="paper-meta">2025</div>
+        <h3><a href="multiply/">On the Mirage of Long-Range Dependency</a></h3>
+        <p>Long-range dependency in integer multiplication is a mirage.
+           A 321-parameter NCA achieves 683x length generalization.</p>
+        <div class="paper-links">
+          <a href="multiply/">Interactive</a>
+          <a href="#">PDF</a>
+          <a href="https://github.com/sead-nca">Code</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sead-footer">
+    <p>SEAD NCA · <a href="https://github.com/sead-nca">GitHub</a></p>
+  </div>
+
+  <style>
+    .paper-list {
+      margin-top: 1rem;
+    }
+    .about {
+      font-style: italic;
+      color: rgba(0,0,0,0.45);
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+    .paper-card {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .paper-card:last-child {
+      border-bottom: none;
+    }
+    .paper-card h3 {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 0 0 0.4rem;
+      line-height: 1.35;
+    }
+    .paper-card h3 a {
+      color: rgba(0,0,0,0.85);
+      text-decoration: none;
+      border-bottom: none;
+    }
+    .paper-card h3 a:hover {
+      color: #004276;
+    }
+    .paper-card p {
+      font-size: 0.9rem;
+      color: rgba(0,0,0,0.55);
+      margin: 0 0 0.5rem;
+      line-height: 1.55;
+    }
+    .paper-meta {
+      font-size: 0.7rem;
+      color: rgba(0,0,0,0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+    .paper-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+    }
+    .paper-links a {
+      color: #004276;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,66,118,0.25);
+    }
+    .paper-links a:hover {
+      border-bottom-color: #004276;
+    }
+  </style>
+</body>
+</html>

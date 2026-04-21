@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="qingzhu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A3E40"/>
+      <stop offset="100%" stop-color="#2B7A78"/>
+    </linearGradient>
+    <linearGradient id="fengyun" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B88A44"/>
+      <stop offset="100%" stop-color="#EAB34D"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <!-- Mask: outer diamond with inner diamond hole -->
+    <mask id="ring">
+      <polygon points="128,50 206,128 128,206 50,128" fill="white"/>
+      <polygon points="128,68 188,128 128,188 68,128" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- Guide lines -->
+  <path d="M 128 40 L 128 216 M 40 128 L 216 128"
+        stroke="#1A3E40" stroke-width="1" stroke-dasharray="4 8" opacity="0.5" fill="none"/>
+  <circle cx="128" cy="128" r="70" fill="none"
+          stroke="#1A3E40" stroke-width="1" stroke-dasharray="2 6"/>
+
+  <!-- Outer diamond ring — gold, with cutout via mask -->
+  <polygon points="128,50 206,128 128,206 50,128"
+           fill="url(#fengyun)" filter="url(#glow)" opacity="0.8"
+           mask="url(#ring)"/>
+
+  <!-- Middle diamond — teal -->
+  <polygon points="128,82 174,128 128,174 82,128" fill="url(#qingzhu)"/>
+
+  <!-- Center diamond — gold -->
+  <polygon points="128,105 151,128 128,151 105,128" fill="url(#fengyun)"/>
+
+  <!-- Fragments — top-left -->
+  <rect x="64" y="64" width="16" height="16" fill="url(#qingzhu)" transform="rotate(45 72 72)"/>
+  <rect x="45" y="85" width="8" height="8" fill="url(#fengyun)" transform="rotate(15 49 89)"/>
+  <circle cx="85" cy="55" r="3" fill="url(#fengyun)"/>
+
+  <!-- Fragments — bottom-right -->
+  <rect x="176" y="176" width="16" height="16" fill="url(#qingzhu)" transform="rotate(45 184 184)"/>
+  <rect x="195" y="155" width="10" height="10" fill="url(#fengyun)" transform="rotate(75 200 160)"/>
+  <circle cx="165" cy="195" r="4" fill="url(#fengyun)"/>
+
+  <!-- Fragments — top-right -->
+  <polygon points="195,65 205,75 195,85 185,75" fill="url(#qingzhu)"/>
+  <circle cx="210" cy="95" r="2" fill="url(#fengyun)"/>
+
+  <!-- Fragments — bottom-left -->
+  <polygon points="61,195 71,205 61,215 51,205" fill="url(#qingzhu)"/>
+</svg>

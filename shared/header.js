@@ -10,7 +10,7 @@
   header.innerHTML = `
     <div class="sead-header-content">
       <a class="sead-header-logo" href="/">
-        <img class="sead-logo-img" src="/shared/yi.svg" alt="仪">
+        <img class="sead-logo-img" src="/shared/logo.svg" alt="SEAD">
         <span>SEAD NCA</span>
       </a>
       <nav class="sead-header-nav">

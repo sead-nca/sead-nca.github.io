@@ -142,7 +142,7 @@ figcaption b, figcaption strong { font-weight: 600; color: rgba(0,0,0,1); }
 .sead-header {
   min-height: 64px;
   align-items: center;
-  background: #442041;
+  background: #14444a;
 }
 
 .sead-header-content {
@@ -168,9 +168,8 @@ figcaption b, figcaption strong { font-weight: 600; color: rgba(0,0,0,1); }
 .sead-header-logo:hover { color: rgba(255,255,255,0.85); }
 
 .sead-logo-img {
-  height: 28px;
+  height: 40px;
   width: auto;
-  filter: brightness(0) invert(1);
   position: relative;
   top: -2px;
 }
